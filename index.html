@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ardoise</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <script src="js/script.js"></script>
+    <script src="js/script-save.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="titre">
+        <h1 class="titre__heading_1">
+            <i class="fas fa-paint-brush"></i> Ardoise Magique ;-)</h1>
+    </header>
+    <main>
+        <canvas class="bord" id="js_cadr_wihte" width="640" height="480"></canvas>
+        <canvas class="bord-color" id="js_bord_color" width="300" height="300"></canvas>
+        <!-- <div id="test"></div> -->
+        <hr>
+        <nav class="tools">
+            <ul class="tools__list">
+                <li class="tools__list-item">
+                    <label class="tools__lable">Outils</label>
+                    <button class="tools__button" id="dropper">
+                        <i class="fas fa-eye-dropper"></i>
+                    </button>
+                    <button class="tools__button" id="eraser">
+                        <i class="fas fa-eraser"></i>
+                    </button>
+                    <button class="tools__button" id="save">
+                        <i class="fas fa-save"></i>
+                    </button>
+                </li>
+                <li class="tools__list-item">
+                    <label class="tools__lable">Couleurs</label>
+                    <div class="tools__black_color color"></div>
+                    <div class="tools__maroon_color color"></div>
+                    <div class="tools__red_color color"></div>
+                    <div class="tools__yellow_color color"></div>
+                    <div class="tools__green_color color"></div>
+                    <div class="tools__seagreen_color color"></div>
+                    <div class="tools__blue_color color"></div>
+                </li>
+                <li class="tools__list-item">
+                    <label class="tools__lable">Epaisseur</label>
+                    <button class="list_button tools__fin_type" value="1">Fin</button>
+                    <button class="list_button tools__normal_type" value="5">Normal</button>
+                    <button class="list_button tools__epais_type" value="10">Epais</button>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    
+      
+</body>
+
+</html>
